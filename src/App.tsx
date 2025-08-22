@@ -1,27 +1,34 @@
 import React from 'react';
 import "./App.css"
-import { useForm } from "react-hook-form";
+import { useForm  } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
+type Credential = {
+  email: string;
+  password: string;
+}
 const schema = yup.object({
-  email: yup.string().required(),
-  password: yup.number().positive().integer().required(),
+  email: yup.string().required().trim(),
+  password: yup.string().required().trim(),
 }).required();
 
 
 function App() {
+  const { register,clearErrors, handleSubmit, formState:{ errors } } = useForm({
+    resolver: yupResolver(schema)
+  });
+  const onSubmit = () => alert("working");
   return (
     <>
 	    <h1>Cube Sign In Form</h1>
       <div className="app-block">
         <div className="cube"><img src={require("./cube.png")} className="img-responsive" alt="cube icon" /></div>
-        <form>
-          <input type="text" className="text" value="Email address" //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email address';}" 
-          />
-          <input type="password" value="Password" //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
-          />
-          <input type="password" value="Password" //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <input {...register("email")} type="text" className="text" //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email address';}" 
+            onChange={()=>{clearErrors('email')}} placeholder="Your Email "           />
+          <input {...register("password")}type="password"  //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
+            onChange={()=>{clearErrors('password')}} placeholder="**********"   
           />
           <div className="submit"><input type="submit" //onclick="myFunction()" 
           value="Sign in" /></div>
