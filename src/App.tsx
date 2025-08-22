@@ -1,25 +1,33 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+//import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+	    <h1>Cube Sign In Form</h1>
+      <div className="app-block">
+        <div className="cube"><img src="images/cube.png" className="img-responsive" alt="" /></div>
+        <form>
+          <input type="text" className="text" value="Email address" //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email address';}" 
+          />
+          <input type="password" value="Password" //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
+          />
+          <div className="submit"><input type="submit" //onclick="myFunction()" 
+          value="Sign in" /></div>
+          <div className="clear"></div>
+          <p><a href="#">Forgot Password ?</a></p>
+        </form>
+        <p className="sign">New here ? <a href="#"> Sign Up</a></p>
+        
+      </div>
+	    {/* <!--start-copyright--> */}
+   		<div className="copy-right">
+				<p>Copyright &copy; 2015  All rights  Reserved | Template by &nbsp;<a href="http://w3layouts.com">W3layouts</a></p>
+		</div>
+  	{/* <!--//end-copyright-->     */}
+
+    </>
   );
 }
 
