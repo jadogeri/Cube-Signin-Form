@@ -1,7 +1,9 @@
 {
   "name": "cube-signin-form-flat-responsive-widget",
   "version": "0.1.0",
+  "author": "Joseph Adogeri",
   "private": true,
+  "homepage": "https://jadogeri.github.io/cube-signin-form/",
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@testing-library/dom": "^10.4.1",
@@ -21,6 +23,8 @@
     "yup": "^1.7.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
