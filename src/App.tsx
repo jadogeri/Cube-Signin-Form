@@ -1,15 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-//import './App.css';
+import "./App.css"
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+
+const schema = yup.object({
+  email: yup.string().required(),
+  password: yup.number().positive().integer().required(),
+}).required();
+
 
 function App() {
   return (
     <>
 	    <h1>Cube Sign In Form</h1>
       <div className="app-block">
-        <div className="cube"><img src="images/cube.png" className="img-responsive" alt="" /></div>
+        <div className="cube"><img src={require("./cube.png")} className="img-responsive" alt="cube icon" /></div>
         <form>
           <input type="text" className="text" value="Email address" //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email address';}" 
+          />
+          <input type="password" value="Password" //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
           />
           <input type="password" value="Password" //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
           />
