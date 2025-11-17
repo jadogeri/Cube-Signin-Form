@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Joseph Adogeri",
   "private": true,
-  "homepage": "https://jadogeri.github.io/cube-signin-form/",
+  "homepage": "https://jadogeri.github.io/Cube-Signin-Form/",
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@testing-library/dom": "^10.4.1",
