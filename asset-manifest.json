@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cube-signin-form/static/css/main.f855e6bc.css",
-    "main.js": "/cube-signin-form/static/js/main.50bd9ede.js",
-    "static/js/453.8f7dd193.chunk.js": "/cube-signin-form/static/js/453.8f7dd193.chunk.js",
-    "index.html": "/cube-signin-form/index.html",
-    "main.f855e6bc.css.map": "/cube-signin-form/static/css/main.f855e6bc.css.map",
-    "main.50bd9ede.js.map": "/cube-signin-form/static/js/main.50bd9ede.js.map",
-    "453.8f7dd193.chunk.js.map": "/cube-signin-form/static/js/453.8f7dd193.chunk.js.map"
+    "main.css": "/Cube-Signin-Form/static/css/main.f855e6bc.css",
+    "main.js": "/Cube-Signin-Form/static/js/main.f133a247.js",
+    "static/js/453.8f7dd193.chunk.js": "/Cube-Signin-Form/static/js/453.8f7dd193.chunk.js",
+    "index.html": "/Cube-Signin-Form/index.html",
+    "main.f855e6bc.css.map": "/Cube-Signin-Form/static/css/main.f855e6bc.css.map",
+    "main.f133a247.js.map": "/Cube-Signin-Form/static/js/main.f133a247.js.map",
+    "453.8f7dd193.chunk.js.map": "/Cube-Signin-Form/static/js/453.8f7dd193.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.50bd9ede.js"
+    "static/js/main.f133a247.js"
   ]
 }
