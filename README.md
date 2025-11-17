@@ -1,4 +1,4 @@
-## **Glossy Textured Contact Form**
+## **Cube Signin Form**
 
 **Version:** 1.1
 **Date:** August 21, 2025
@@ -7,7 +7,7 @@
 
 ## Description
 
-This is a frontend Application temnplate (typescript) utilizing library react hook form for validating inputs.
+This is a frontend Application temnplate (typescript) utilizing library react hook form with yup library for validating inputs.
 
 ## Authors
 
@@ -19,23 +19,22 @@ Design and template by [W3Layouts](https://w3layouts.com/)
 
 ## Project Template
 
-[Glossy Textured Contact Form Responsive Widget Template](https://w3layouts.com/glossy-textured-contact-form-responsive-widget-template/)
+[Cube Signin Form Flat Responsive Widget Template](https://w3layouts.com/template/cube-signin-form-flat-responsive-widget-template/)
 
 ## Deployment
 
 Application is deployed in Github (Github Pages)
 
- [https://jadogeri.github.io/Glossy_Textured_Contact_Form/](https://jadogeri.github.io/Glossy_Textured_Contact_Form/)
+ [https://jadogeri.github.io/Cube-Signin-Form/](https://jadogeri.github.io/Cube-Signin-Form/)
 
 ## Repository
 
-[source code ](https://github.com/jadogeri/Glossy_Textured_Contact_Form)
+[source code ](https://github.com/jadogeri/Cube-Signin-Form.git)
 
 ## Screenshots
--------------------------------------------------------------------------------------------------
-| ![Screenshot 1](assets/images/screenshot1.png) | ![Screenshot 1](assets/images/screenshot2.png) |
+| ![Screenshot 1](assets/images/screenshot1.png) | ![screenshot 2](assets/images/screenshot2.png) |
 | -------------------------------------------- | -------------------------------------------- |
-| ![Screenshot 1](assets/images/screenshot3.png) | ![Screenshot 1](assets/images/screenshot4.png) |
+|                                              |                                              |
 
 ## Table of Contents
 
@@ -78,16 +77,16 @@ This document outlines the components, and design considerations for utilizing r
 
 1 Open command prompt or terminal.
 
-2 Type command git clone https://github.com/jadogeri/Glossy_Textured_Contact_Form.git then press enter.
+2 Type command git clone https://github.com/jadogeri/Cube-Signin-Form.git then press enter.
 
 ```bash
-  git clone https://github.com/jadogeri/Glossy_Textured_Contact_Form.git
+  git clone https://github.com/jadogeri/Cube-Signin-Form.git
 ```
 
-3 Enter command cd Glossy_Textured_Contact_Form then press enter.
+3 Enter command cd Cube-Signin-Form then press enter.
 
 ```bash
-  cd Glossy_Textured_Contact_Form
+  cd Cube-Signin-Form
 ```
 
 #### **3.1.1 Run Locally**

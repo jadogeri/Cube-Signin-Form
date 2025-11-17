@@ -27,16 +27,18 @@ function App() {
         <form onSubmit={handleSubmit(onSubmit)}>
           <input {...register("email")} type="text" className="text" //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email address';}" 
             onChange={()=>{clearErrors('email')}} placeholder="Your Email "           />
+          {errors.email && <p style={{ color: 'red' }}>{errors.email.message}</p>}
+
           <input {...register("password")}type="password"  //onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
             onChange={()=>{clearErrors('password')}} placeholder="**********"   
           />
+          {errors.password && <p style={{ color: 'red' }}>{errors.password.message}</p>}
+
           <div className="submit"><input type="submit" //onclick="myFunction()" 
           value="Sign in" /></div>
           <div className="clear"></div>
-          <p><a href="#">Forgot Password ?</a></p>
         </form>
-        <p className="sign">New here ? <a href="#"> Sign Up</a></p>
-        
+       
       </div>
 	    {/* <!--start-copyright--> */}
    		<div className="copy-right">
